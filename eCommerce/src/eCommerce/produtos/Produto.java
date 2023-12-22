@@ -3,21 +3,22 @@ package eCommerce.produtos;
 public class Produto {
 
 	// Atributos
+	private int numero;
 	private String nome;
 	private float valor;
 
 	// Construtor
-	public Produto(String nome, float valor) {
+	public Produto(int numero, String nome, float valor) {
 		super();
+		this.numero = numero;
 		this.nome = nome;
 		this.valor = valor;
 	}
 
 	// Métodos
 	public void visualizar() {
-		System.out.println("\n**********************************************");
-		System.out.println("Nome: " + this.nome + " - Valor: " + this.valor);
-		System.out.println("\n");
+		System.out.println("\n-------------------------------");
+		System.out.println("\n" + numero + " - Nome: " + this.nome + " - Valor: " + this.valor);
 	}
 
 	// Getters and Setters
@@ -36,5 +37,15 @@ public class Produto {
 	public void setValor(float valor) {
 		this.valor = valor;
 	}
+
+	public long getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	
 	
 }

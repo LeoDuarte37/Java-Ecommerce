@@ -10,6 +10,9 @@ public class ContaCliente extends Conta {
 	private String sobrenome, endereco;
 	private long cpf, idade;
 	
+	
+	private ArrayList<String> carrinho = new ArrayList<String>();
+	
 	// Construtor
 	public ContaCliente(long id, String titular, String sobrenome, long idade, long cpf, String endereco) {
 		super(id, titular);
@@ -27,23 +30,29 @@ public class ContaCliente extends Conta {
 		System.out.println("Idade: " + this.idade);
 		System.out.println("CPF: " + this.cpf);
 		System.out.println("Endereço: " + this.endereco);
-		System.out.println("\n**********************************************");
+		System.out.println("\n-------------------------------");
 	}
 	
-	public void listarCarrinho() {
+	public void listarItens() {
+		int i = 0;
+		System.out.println("\n-------------------------------");
+		for (String item : carrinho) {
+			System.out.println("\n" + i + " - " + item);
+			i++;
+		}
 		
 	}
 	
-	public void adicionarItemCarrinho(Produto produto) {
-		
+	public void finalizarCarrinho() {
+		carrinho.clear();
 	}
 	
-	public void removerItemCarrinho(String nome) {
-		
+	public void adicionarItem(Produto produto) {
+		carrinho.add(produto.getNome());
 	}
 	
-	public void finalizarCarrinho(Produto produto) {
-		
+	public void removerItem(int index) {
+		carrinho.remove(index);
 	}
 
 	// Getters and Setters
@@ -78,8 +87,7 @@ public class ContaCliente extends Conta {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	
-	
-	
+
+			
 	
 }
