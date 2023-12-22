@@ -1,12 +1,19 @@
 package eCommerce;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import conta.controller.ContaController;
+import eCommerce.produtos.Produto;
 
 public class Menu {
 
 	public static void main(String[] args) {
-
+		
+		// Criando Objeto da Classe ContaControlller
+		ContaController contas = new ContaController();
+		
 		Scanner ler = new Scanner(System.in);
 
 		int opcao;
@@ -18,7 +25,6 @@ public class Menu {
 			System.out.println("\n2: Listar produtos disponiveis");
 			System.out.println("\n3: Criar conta");
 			System.out.println("\n4: Minhas informações");
-			System.out.println("\n5: Atualizar minhas informações");
 			System.out.println("\n6: Sair");
 			System.out.println("\n-------------------------------");
 			System.out.println("\n*Para comprar é nescessário uma conta*");
@@ -31,15 +37,16 @@ public class Menu {
 				case 1 -> {
 					System.out.println("\nDigite o ID da sua conta: ");
 					
-					if (id) {
+					if () {
 						do {
 							System.out.println("\tCompras");
 							System.out.println("\n-------------------------------");
 							System.out.println("\n1: Listar produtos disponiveis");
 							System.out.println("\n2: Meu carrinho");
 							System.out.println("\n3: Adicionar produto ao carrinho");
-							System.out.println("\n4: Finalizar meus pedidos");
-							System.out.println("\n5: Voltar");
+							System.out.println("\n4: Remover produto do carrinho");
+							System.out.println("\n5: Finalizar meus pedidos");
+							System.out.println("\n6: Voltar");
 							System.out.println("\n-------------------------------");
 
 							System.out.println("\nDigite a sua opção: ");
@@ -67,6 +74,10 @@ public class Menu {
 								}
 					
 								case 5 -> {
+									
+								}
+								
+								case 6 -> {
 									System.out.println("\n*Voltar*");
 									keyPress();
 									
@@ -78,7 +89,7 @@ public class Menu {
 								}
 							}
 
-						} while (opcao != 5);
+						} while (opcao != 6);
 						
 					} else {
 						System.out.println("\nEssa conta não existe");
