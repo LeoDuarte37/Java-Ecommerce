@@ -7,7 +7,7 @@ import produto.repository.ProdutoRepository;
 public class ProdutoController implements ProdutoRepository {
 	
 	private ArrayList <Produto> produtos = new ArrayList<Produto>();
-	int numero = 0;
+	int numero = -1;
 
 	@Override
 	public void adicionar(Produto produto) {
@@ -37,6 +37,7 @@ public class ProdutoController implements ProdutoRepository {
 	
 	public int gerarNumero() {
 		return ++numero;
+		
 	}
 
 	public Produto buscarNaCollection(int numero) {

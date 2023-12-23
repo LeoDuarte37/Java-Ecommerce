@@ -11,7 +11,7 @@ public class ContaCliente extends Conta {
 	private long cpf, idade;
 	
 	
-	private ArrayList<String> carrinho = new ArrayList<String>();
+	private ArrayList<Produto> carrinho = new ArrayList<Produto>();
 	
 	// Construtor
 	public ContaCliente(long id, String titular, String sobrenome, long idade, long cpf, String endereco) {
@@ -34,21 +34,22 @@ public class ContaCliente extends Conta {
 	}
 	
 	public void listarItens() {
-		int i = 0;
 		System.out.println("\n-------------------------------");
-		for (String item : carrinho) {
-			System.out.println("\n" + i + " - " + item);
-			i++;
+		for (Produto item : carrinho) {
+			System.out.println("\n" + item.getNumero() + " - " + item.getNome() + " R$" + item.getValor());
+
 		}
 		
 	}
+	
+	
 	
 	public void finalizarCarrinho() {
 		carrinho.clear();
 	}
 	
 	public void adicionarItem(Produto produto) {
-		carrinho.add(produto.getNome());
+		carrinho.add(produto);
 	}
 	
 	public void removerItem(int index) {
