@@ -28,17 +28,18 @@ public class Menu {
 		String titular, sobrenome, endereco;
 		
 		do {
-			System.out.println("\tBem vindo ao E-Commerce");
-			System.out.println("\n-------------------------------");
+			System.out.println("\n\n-----------------------------------------");
+			System.out.println("\n\tBem vindo ao E-Commerce");
+			System.out.println("\n-----------------------------------------");
 			System.out.println("\n1: Comprar");
 			System.out.println("\n2: Listar produtos disponiveis");
 			System.out.println("\n3: Criar conta");
 			System.out.println("\n4: Minhas informações");
 			System.out.println("\n5: Atualizar minhas informações");
 			System.out.println("\n6: Sair");
-			System.out.println("\n-------------------------------");
+			System.out.println("\n-----------------------------------------");
 			System.out.println("\n*Para comprar é nescessário uma conta*");
-			System.out.println("\n-------------------------------");
+			System.out.println("\n-----------------------------------------");
 
 			System.out.println("\nDigite a sua opção: ");
 			opcao = ler.nextInt();
@@ -50,16 +51,16 @@ public class Menu {
 					
 					if (contas.procurarPorNumero(id) == true) {
 						do {
-							System.out.println("\n\n-------------------------------");
-							System.out.println("\tCompras");
-							System.out.println("\n-------------------------------");
+							System.out.println("\n\n-----------------------------------------");
+							System.out.println("\n\t\tCompras");
+							System.out.println("\n-----------------------------------------");
 							System.out.println("\n1: Listar produtos disponiveis");
 							System.out.println("\n2: Meu carrinho");
 							System.out.println("\n3: Adicionar produto ao carrinho");
 							System.out.println("\n4: Remover produto do carrinho");
 							System.out.println("\n5: Finalizar meus pedidos");
 							System.out.println("\n0: Voltar");
-							System.out.println("\n-------------------------------");
+							System.out.println("\n-----------------------------------------");
 
 							System.out.println("\nDigite a sua opção: ");
 							opcao = ler.nextInt();
@@ -68,6 +69,8 @@ public class Menu {
 								case 1 -> {
 									System.out.println("\n\nProdutos disponiveis: ");
 									produtos.listarProdutos();
+									
+									System.out.println("\n-----------------------------------------");
 									keyPress();
 								}
 					
@@ -89,12 +92,13 @@ public class Menu {
 								}
 					
 								case 3 -> {
+									System.out.println("\n\n-----------------------------------------");
 									System.out.println("\n\nAdicionar produto ao carrinho");
 									
 									System.out.println("\nDigite o id da sua conta:");
 									id = ler.nextLong();
 									
-									System.out.println("\n-----------------------------");
+									System.out.println("\n-----------------------------------------");
 									
 									produtos.listarProdutos();
 									
@@ -111,6 +115,7 @@ public class Menu {
 								}
 					
 								case 4 -> {
+									System.out.println("\n\n-----------------------------------------");
 									System.out.println("\n\nRemover produto do carrinho");
 									
 									System.out.println("\nDigite o id da sua conta:");
@@ -128,6 +133,7 @@ public class Menu {
 								}
 					
 								case 5 -> {
+									System.out.println("\n\n-----------------------------------------");
 									System.out.println("\n\nLimpar os produtos do carrinho");
 									
 									System.out.println("\nDigite o id da sua conta:");
@@ -137,6 +143,7 @@ public class Menu {
 								}
 								
 								case 0 -> {
+									System.out.println("\n\n-----------------------------------------");
 									System.out.println("\n\n*Voltar*");
 									keyPress();
 									
@@ -159,12 +166,15 @@ public class Menu {
 				}
 	
 				case 2 -> {
+					System.out.println("\n\n-----------------------------------------");
 					System.out.println("\n\nProdutos disponiveis: ");
 					produtos.listarProdutos();
+					
 					keyPress();
 				} 
 	
 				case 3 -> {
+					System.out.println("\n\n-----------------------------------------");
 					System.out.println("\n\nCriação de conta");
 					
 					System.out.println("\nDigite o id pra sua conta:");
@@ -202,6 +212,7 @@ public class Menu {
 				}
 	
 				case 4 -> {
+					System.out.println("\n\n-----------------------------------------");
 					
 					try {
 						System.out.println("\nDigite o ID da conta:");
@@ -217,6 +228,7 @@ public class Menu {
 				}
 				
 				case 5 -> {
+					System.out.println("\n\n-----------------------------------------");
 					System.out.println("Atualizar dados da Conta\n\n");
 					
 					System.out.println("Digite o ID da conta: ");
@@ -261,6 +273,7 @@ public class Menu {
 				}
 	
 				case 6 -> {
+					System.out.println("\n\n-----------------------------------------");
 					System.out.println("\nObrigado por utilizar o nosso e-commerce <3");
 					sobre();
 					ler.close();

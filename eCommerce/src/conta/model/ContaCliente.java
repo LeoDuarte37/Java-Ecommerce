@@ -30,11 +30,11 @@ public class ContaCliente extends Conta {
 		System.out.println("Idade: " + this.idade);
 		System.out.println("CPF: " + this.cpf);
 		System.out.println("Endereço: " + this.endereco);
-		System.out.println("\n-------------------------------");
+		System.out.println("-----------------------------------------");
 	}
 	
 	public void listarItens() {
-		System.out.println("\n-------------------------------");
+		System.out.println("\n\n-----------------------------------------");
 		for (Produto item : carrinho) {
 			System.out.println("\n" + item.getNumero() + " - " + item.getNome() + " R$" + item.getValor());
 

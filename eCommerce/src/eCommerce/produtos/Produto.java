@@ -17,7 +17,7 @@ public class Produto {
 
 	// Métodos
 	public void visualizar() {
-		System.out.println("\n-------------------------------");
+		System.out.println("\n\n-----------------------------------------");
 		System.out.println("\n" + numero + " - Nome: " + this.nome + " - Valor: " + this.valor);
 	}
 

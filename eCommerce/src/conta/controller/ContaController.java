@@ -100,7 +100,7 @@ public class ContaController implements ContaRepository {
 		}
 	
 		
-		System.out.println("\n-------------------------------");
+		System.out.println("\n-----------------------------------------");
 	}
 	
 	

@@ -15,9 +15,9 @@ public abstract class Conta {
 	
 	// Métodos
 	public void visualizar() {
-		System.out.println("\n\n-------------------------------");
-		System.out.println("\n\t\tDados da Conta:\n");
-		System.out.println("\n-------------------------------");
+		System.out.println("\n\n-----------------------------------------");
+		System.out.println("\n\t\tDados da Conta:");
+		System.out.println("\n-----------------------------------------");
 		System.out.println("ID da conta: " + this.id);
 		System.out.println("Titular: " + this.titular);
 	}
