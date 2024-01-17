@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 import conta.controller.ContaController;
 import conta.model.ContaCliente;
-import eCommerce.produtos.Produto;
 import produto.controller.ProdutoController;
+import produto.model.Produto;
 
 public class Menu {
 

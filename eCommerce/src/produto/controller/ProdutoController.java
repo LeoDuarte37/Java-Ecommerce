@@ -1,7 +1,8 @@
 package produto.controller;
 
 import java.util.ArrayList;
-import eCommerce.produtos.Produto;
+
+import produto.model.Produto;
 import produto.repository.ProdutoRepository;
 
 public class ProdutoController implements ProdutoRepository {

@@ -2,7 +2,7 @@ package conta.repository;
 
 import conta.model.Conta;
 import conta.model.ContaCliente;
-import eCommerce.produtos.Produto;
+import produto.model.Produto;
 
 public interface ContaRepository {
 

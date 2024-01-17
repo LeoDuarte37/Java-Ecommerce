@@ -1,6 +1,6 @@
 package produto.repository;
 
-import eCommerce.produtos.Produto;
+import produto.model.Produto;
 
 public interface ProdutoRepository {
 	

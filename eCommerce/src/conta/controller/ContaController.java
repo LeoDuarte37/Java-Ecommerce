@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import conta.model.Conta;
 import conta.model.ContaCliente;
 import conta.repository.ContaRepository;
-import eCommerce.produtos.Produto;
+import produto.model.Produto;
 
 public class ContaController implements ContaRepository {
 

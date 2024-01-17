@@ -2,7 +2,7 @@ package conta.model;
 
 import java.util.ArrayList;
 
-import eCommerce.produtos.Produto;
+import produto.model.Produto;
 
 public class ContaCliente extends Conta {
 	
