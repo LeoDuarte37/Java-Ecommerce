@@ -1,4 +1,4 @@
-package produto.model;
+package eCommerce.model;
 
 public class Produto {
 

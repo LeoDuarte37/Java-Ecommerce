@@ -1,11 +1,11 @@
-package conta.controller;
+package eCommerce.controller;
 
 import java.util.ArrayList;
 
-import conta.model.Conta;
-import conta.model.ContaCliente;
-import conta.repository.ContaRepository;
-import produto.model.Produto;
+import eCommerce.model.Conta;
+import eCommerce.model.ContaCliente;
+import eCommerce.model.Produto;
+import eCommerce.repository.ContaRepository;
 
 public class ContaController implements ContaRepository {
 

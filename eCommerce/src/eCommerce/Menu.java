@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import conta.controller.ContaController;
-import conta.model.ContaCliente;
-import produto.controller.ProdutoController;
-import produto.model.Produto;
+import eCommerce.controller.ContaController;
+import eCommerce.controller.ProdutoController;
+import eCommerce.model.ContaCliente;
+import eCommerce.model.Produto;
 
 public class Menu {
 
