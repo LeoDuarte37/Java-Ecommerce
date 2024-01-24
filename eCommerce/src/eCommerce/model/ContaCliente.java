@@ -1,8 +1,6 @@
-package conta.model;
+package eCommerce.model;
 
 import java.util.ArrayList;
-
-import produto.model.Produto;
 
 public class ContaCliente extends Conta {
 	

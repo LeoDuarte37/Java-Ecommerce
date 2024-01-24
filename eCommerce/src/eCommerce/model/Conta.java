@@ -1,4 +1,4 @@
-package conta.model;
+package eCommerce.model;
 
 public abstract class Conta {
 	
