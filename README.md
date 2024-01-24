@@ -19,4 +19,6 @@ Stack Java Web da Generation, sendo avaliado pelo uso das seguintes habilidades 
 - Exceptions.
 - Criar uma branch chamada collection-exceptions e subir a alterações do projeto.
   
-## Competências: Core Java · Programação orientada a objetos (POO) · Git
+### Competências: 
+
+Core Java · Programação orientada a objetos (POO) · Git
